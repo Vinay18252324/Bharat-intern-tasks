@@ -1,63 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Webpage Design</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">Vinay</h2>
-            </div>
-
-            <div class="menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">DESIGN</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </div>
-
-            <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type To text">
-                <a href="#"> <button class="btn">Search</button></a>
-            </div>
-
-        </div> 
-        <div class="content">
-            <h1>Portfolio<br><span>Developer</span> <br>and web Designer</h1>
-            <p class="par">Hello!, I am a passionate portfolio web developer and designer<br>My technical proficiency includes proficiency in HTML, CSS, JavaScript
-                <br> I am excited to leverage my portfolio web development and design skills to create stunning websites</p>
-
-                <button class="cn"><a href="#">JOIN US</a></button>
-
-                <div class="form">
-                    <h2>Login Here</h2>
-                    <input type="email" name="email" placeholder="Enter Email Here">
-                    <input type="password" name="" placeholder="Enter Password Here">
-                    <button class="btnn"><a href="#">Login</a></button>
-
-                    <p class="link">Don't have an account<br>
-                    <a href="#">Sign up </a> here</a></p>
-                    <p class="liw">Log in with</p>
-
-                    <div class="icons">
-                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                    </div>
-
-                </div>
-                    </div>
-                </div>
-        </div>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="logo.png" />
+    <title>Animated Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="bubbles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+      <span class="four"></span>
+      <span class="five"></span>
+      <span class="six"></span>
+      <span class="seven"></span>
+      <span class="seven"></span>
     </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-</body>
+    <div class="bubbles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+      <span class="four"></span>
+      <span class="five"></span>
+      <span class="six"></span>
+      <span class="seven"></span>
+      <span class="seven"></span>
+    </div>
+    <div class="bubbles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+      <span class="four"></span>
+      <span class="five"></span>
+      <span class="six"></span>
+      <span class="seven"></span>
+      <span class="seven"></span>
+    </div>
+    <div class="bubbles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+      <span class="four"></span>
+      <span class="five"></span>
+      <span class="six"></span>
+      <span class="seven"></span>
+      <span class="seven"></span>
+    </div> 
+    <div class="container">
+      <form action="#" name="forms">
+        <input type="text" name="answer" />
+        <div class="buttons">
+          <input type="button" value="AC" onClick="forms.answer.value = ''" />
+          <input type="button" value="DEL" onClick="forms.answer.value = forms.answer.value.substr(0 , forms.answer.value.length -1)" />
+          <input type="button" value="%" onClick="forms.answer.value += '%'" />
+          <input type="button" value="/" onClick="forms.answer.value += '/'" />
+        </div>
+        <div class="buttons">
+          <input type="button" value="7" onClick="forms.answer.value += '7'" />
+          <input type="button" value="8" onClick="forms.answer.value += '8'" />
+          <input type="button" value="9" onClick="forms.answer.value += '9'" />
+          <input type="button" value="*" onClick="forms.answer.value += '*'" />
+        </div>
+        <div class="buttons">
+          <input type="button" value="4" onClick="forms.answer.value += '4'" />
+          <input type="button" value="5" onClick="forms.answer.value += '5'" />
+          <input type="button" value="6" onClick="forms.answer.value += '6'" />
+          <input type="button" value="-" onClick="forms.answer.value += '-'" />
+        </div>
+        <div class="buttons">
+          <input type="button" value="1" onClick="forms.answer.value += '1'" />
+          <input type="button" value="2" onClick="forms.answer.value += '2'" />
+          <input type="button" value="3" onClick="forms.answer.value += '3'" />
+          <input type="button" value="+" onClick="forms.answer.value += '+'" />
+        </div>
+        <div class="buttons">
+          <input type="button" value="0" onClick="forms.answer.value += '0'" />
+          <input type="button" value="00" onClick="forms.answer.value += '00'" />
+          <input type="button" value="." onClick="forms.answer.value += '.'" />
+          <input type="button" value="=" onClick="forms.answer.value = eval(forms.answer.value)" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
